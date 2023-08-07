@@ -56,3 +56,39 @@ button {
 button:hover {
     background-color: #a00000;
 }
+
+#list {
+    max-width: 500px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc ;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+.post {
+    border:  1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.post h2 {
+    color: #d30000;
+    margin-bottom: 5px;
+}
+.post button {
+    background-color: #d30000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+
+}
+.post button:hover {
+    background-color: #a00000;
+}
+.hidden {
+    display: none;
+}

@@ -1,8 +1,10 @@
 const posts = [];
 let indexPost = -1;
+let i = 0;
 
 
 function savePost() {
+    i++;
     const title = document.getElementById("title").value;
     const resume = document.getElementById("resume").value;
     const publisher = document.getElementById("publisher").value;
@@ -38,6 +40,7 @@ function storePost(title, resume, publisher, date) {
     posts.push(post)
 }
 function showPosts() {
+    document.getElementById("list").classList.remove("hidden");
     let showContent = "";
 
     posts.forEach((post, index) => {
@@ -81,4 +84,8 @@ function editpost(index) {
     posts.splice(index, 1);
 
     showPosts();
+   if (i == 1){
+    document.getElementById("list").classList.add("hidden");}
+    i = i - 1;
  }
+ 

@@ -10,6 +10,7 @@ function savePost() {
         storePost(title, resume, publisher, date);
 
     }
+    showPosts();
 }
 function storePost(title, resume, publisher, date) {
     const post = {
@@ -18,6 +19,26 @@ function storePost(title, resume, publisher, date) {
         publisher,
         date
     };
-
     posts.push(post)
+}
+function showPosts() {
+    let showContent = "";
+
+    posts.forEach((post, index) => {
+        showContent += `
+        <div class="post">
+
+        <h2>${post.title}</h2>
+        <p><strong>Resumo: </strong>${post.resume}</p>
+        <p><strong>Autor: </strong>${post.publisher}</p>
+        <p><strong>Data de Publicaçao: </strong>${post.date}</p>
+<button onclick="editpost(${index})">Editar</button>
+<button onclick="removepost(${index})">Remover</button>
+
+
+        </div>
+
+        `;
+    })
+    document.getElementById("list").innerHTML = showContent;
 }

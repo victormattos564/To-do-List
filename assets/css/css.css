@@ -9,18 +9,19 @@
 body {
     background-color: #f0f0f0;
 }
-
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 h1 {
     text-align: center;
     color: #d30000;
 }
 
 #postform {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    max-width: 500px;
     width: 100%;
     padding: 20px;
     border: 1px solid #ccc;
@@ -36,6 +37,7 @@ textarea {
     margin-bottom: 10px;
     width: 100%;
     box-sizing: border-box;
+    max-width: 500px;
 }
 
 textarea {
@@ -46,7 +48,7 @@ button {
     background-color: #d30000;
     color: #ffffff;
     cursor: pointer;
-    width: 10%;
+    width: 100%;
     padding: 0.25rem;
     border-radius: 8px;
 }

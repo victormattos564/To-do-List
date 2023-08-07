@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,31 @@
     <link rel="stylesheet" href="assets/css/css.css">
     <title>to do list</title>
 </head>
+
 <body>
     <h1>Próximos Posts</h1>
-    <div id="postform">     
-    </div>
-    <div>
-        <label for="title">Titulo</label>
-        <input type="text" id="title" name="title" required>
-    </div>
-    <div>
-        <label for="resume">resumo</label>
-        <textarea type ="text" id="resume" name="resume" rows="4" required></textarea>
-    </div>
-    <div>
-        <label for="publisher">autor</label>
-        <input type="text" id="publisher" name="publisher" required>
-    </div>
-    <div>
-        <label for="date">data</label>
-        <input type="date" id="date" name="date" required>
-    </div>
+    <div id="postform">
 
-    <button>cadastrar</button>
+        <div>
+            <label for="title">Titulo</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+        <div>
+            <label for="resume">resumo</label>
+            <textarea type="text" id="resume" name="resume" rows="4" required></textarea>
+        </div>
+        <div>
+            <label for="publisher">autor</label>
+            <input type="text" id="publisher" name="publisher" required>
+        </div>
+        <div>
+            <label for="date">data</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+
+        <button>Cadastrar</button>
+    </div>
+    <div id="list"></div>
 </body>
+
 </html>
